@@ -1,0 +1,93 @@
+<!-- service.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Услуга — Сайт Лёхе</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo neon">Сайт Лёхе</a>
+      <nav class="nav">
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#portfolio">Портфолио</a>
+        <a href="index.html#reviews">Отзывы</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <button class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="section hero hero--slim">
+    <div class="container">
+      <h1 id="serviceTitle" class="neon-xl">Услуга</h1>
+      <p id="serviceLead">Описание.</p>
+      <a href="#order" class="btn btn-neon">Заказать</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Галерея</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper" id="gallery"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <p>Поддерживаются JPG/PNG/WebP. Замените пути в script.js на реальные изображения для каждой услуги.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div class="prose">
+        <h2 class="section-title">О услуге</h2>
+        <div id="serviceDescription" class="mt"></div>
+        <ul id="serviceBullets" class="list mt"></ul>
+      </div>
+      <form id="serviceForm" class="form glass shadow pad" id="order">
+        <h3>Оформить заказ</h3>
+        <div class="field">
+          <span>Ваше имя</span>
+          <input type="text" name="name" required>
+        </div>
+        <div class="field mt">
+          <span>Телефон</span>
+          <input type="tel" name="phone" required>
+        </div>
+        <div class="field mt">
+          <span>Комментарий</span>
+          <textarea name="message" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-neon mt">Отправить в WhatsApp</button>
+        <p class="hint">Мы ответим в ближайшее рабочее время</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 Сайт Лёхе</p>
+      <nav class="nav">
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#portfolio">Портфолио</a>
+        <a href="index.html#reviews">Отзывы</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

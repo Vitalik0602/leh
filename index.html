@@ -1,0 +1,178 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт Лёхе</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo neon">Сайт Лёхе</a>
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <button class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="section hero">
+    <div class="container hero__inner">
+      <div class="hero__content glass shadow">
+        <h1 class="neon-xl">Создаём атмосферу событий</h1>
+        <p>Аренда и монтаж фотозон, неоновых вывесок и декора под ключ. Эстетика, логистика и точные сроки.</p>
+        <div class="hero__cta">
+          <a href="#services" class="btn btn-neon">Смотреть услуги</a>
+          <a href="#contacts" class="btn btn-outline">Быстрый запрос</a>
+        </div>
+        <div class="hero__badges">
+          <div>10+ лет: коммерческие и частные события</div>
+          <div>360°: дизайн, производство, монтаж</div>
+          <div>Сроки: от 24 часов</div>
+        </div>
+      </div>
+      <div class="hero__art">
+        <div class="neon-frame glass shadow" style="background-image: url('img/img1.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center;">
+          <div class="neon-line tl"></div>
+          <div class="neon-line tr"></div>
+          <div class="neon-line bl"></div>
+          <div class="neon-line br"></div>
+        </div>
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Услуги</h2>
+      <div class="cards">
+        <div class="card glass shadow">
+          <div class="card__media" style="background-image: url('img/img1.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+          <div class="card__body">
+            <h3>Фотозоны</h3>
+            <p>Аренда, доставка и монтаж фотозон для мероприятий любой масштаба: от камерных до федеральных.</p>
+            <div class="card__actions">
+              <a href="service.html?service=photozones" class="btn small btn-neon">Подробнее</a>
+              <button class="btn small btn-outline" data-quick-order="Фотозоны">Быстрый заказ</button>
+            </div>
+          </div>
+        </div>
+        <div class="card glass shadow">
+          <div class="card__media alt" style="background-image: url('img/img2.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+          <div class="card__body">
+            <h3>Вывески</h3>
+            <p>Объёмные буквы, гибкий неон, световые короба. Индивидуальное производство и монтаж.</p>
+            <div class="card__actions">
+              <a href="service.html?service=signage" class="btn small btn-neon">Подробнее</a>
+              <button class="btn small btn-outline" data-quick-order="Вывески">Быстрый заказ</button>
+            </div>
+          </div>
+        </div>
+        <div class="card glass shadow">
+          <div class="card__media duo" style="background-image: url('img/img3.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+          <div class="card__body">
+            <h3>Декор</h3>
+            <p>Оформление залов, витрин и площадок. Комбинируем текстуры, свет и цвет для нужного эффекта.</p>
+            <div class="card__actions">
+              <a href="service.html?service=decor" class="btn small btn-neon">Подробнее</a>
+              <button class="btn small btn-outline" data-quick-order="Декор">Быстрый заказ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2 class="section-title">Портфолио</h2>
+      <div class="masonry">
+        <div class="tile t1 glass shadow" style="background-image: url('img/img1.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+        <div class="tile t2 glass shadow" style="background-image: url('img/img2.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+        <div class="tile t3 glass shadow" style="background-image: url('img/img3.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+        <div class="tile t4 glass shadow" style="background-image: url('img/img4.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+        <div class="tile t5 glass shadow" style="background-image: url('img/portfolio5.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+        <div class="tile t6 glass shadow" style="background-image: url('img/portfolio6.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section">
+    <div class="container">
+      <h2 class="section-title">Отзывы клиентов</h2>
+      <div class="reviews">
+        <div class="review glass shadow">
+          <p class="review-text">«Фотозона была центром вечера — гости не отходили! Спасибо за скорость и дизайн»</p>
+          <p class="review-author">— Анна, организатор свадьбы</p>
+        </div>
+        <div class="review glass shadow">
+          <p class="review-text">«Вывеска превзошла ожидания, монтаж аккуратный, подсветка — бомба!»</p>
+          <p class="review-author">— Сергей, владелец кафе</p>
+        </div>
+        <div class="review glass shadow">
+          <p class="review-text">«Декор сделал мероприятие атмосферным, работали слаженно, в сроки уложились»</p>
+          <p class="review-author">— Ирина, event‑менеджер</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="section">
+    <div class="container contact glass shadow">
+      <div>
+        <h2 class="section-title">Связаться с нами</h2>
+        <p>Опишите задачу кратко — пришлём варианты и смету в WhatsApp.</p>
+        <ul class="list">
+          <li>Телефон: +1 (000) 000‑00‑00</li>
+          <li>Email: hello@artdecor.example</li>
+          <li>График: Пн–Сб, 10:00–20:00</li>
+        </ul>
+      </div>
+      <form id="contactForm" class="form">
+        <div class="grid">
+          <div class="field">
+            <span>Ваше имя</span>
+            <input type="text" name="name" required>
+          </div>
+          <div class="field">
+            <span>Телефон</span>
+            <input type="tel" name="phone" required>
+          </div>
+        </div>
+        <div class="field mt">
+          <span>Краткое описание</span>
+          <textarea name="message" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-neon mt">Отправить в WhatsApp</button>
+        <p class="hint">Нажимая отправить, вы соглашаетесь на обработку данных</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 Сайт Лёхе</p>
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
