@@ -358,7 +358,7 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
     position: fixed;
     top: 100px;
     left: 50%;
-    transform: translateX(100%);
+    transform: translateX(100%); /* Меню изначально за пределами экрана */
     transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
     background: rgba(11, 15, 22, 0.5);
     backdrop-filter: blur(14px);
@@ -369,16 +369,15 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
     padding: 20px;
     width: fit-content;
     min-width: 200px;
-    max-width: 100vw; /* Меню не выходит за viewport */
     border-radius: 8px;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 0; /* Скрываем меню */
+    visibility: hidden; /* Убираем из видимости */
   }
 
   .nav.active {
-    transform: translateX(-50%);
-    opacity: 1;
-    visibility: visible;
+    transform: translateX(-50%); /* Центрируем при активации */
+    opacity: 1; /* Делаем видимым */
+    visibility: visible; /* Показываем меню */
   }
 
   .nav a {
