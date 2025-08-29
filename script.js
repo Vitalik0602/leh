@@ -399,29 +399,24 @@ document.addEventListener('DOMContentLoaded', () => {
     animationObserver.observe(el);
   });
   
-  // Получаем элементы
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('.nav');
-const body = document.body;
-
-// Проверка, что элементы существуют
-if (burger && nav) {
-  // При клике на бургер
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('active'); // Переключаем класс активности у гамбургера
-    nav.classList.toggle('active');    // Переключаем класс активности у меню
-    body.classList.toggle('menu-open'); // Переключаем класс у body для блокировки прокрутки
-  });
-
-  // При клике на ссылки внутри меню
-  document.querySelectorAll('.nav a').forEach(link => {
-    link.addEventListener('click', () => {
-      burger.classList.remove('active'); // Убираем активный класс с гамбургера
-      nav.classList.remove('active');    // Убираем активный класс с меню
-      body.classList.remove('menu-open'); // Убираем класс у body, чтобы восстановить прокрутку
+  // Бургер-меню
+  const burger = qs('.burger');
+  const nav = qs('.nav');
+  const body = document.body;
+  if (burger && nav) {
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('active');
+      nav.classList.toggle('active');
+      body.classList.toggle('menu-open');
     });
-  });
-}
+    qsa('.nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        burger.classList.remove('active');
+        nav.classList.remove('active');
+        body.classList.remove('menu-open');
+      });
+    });
+  }
 
   // Плавная прокрутка
   qsa('a[href^="#"]').forEach(a => {
@@ -560,4 +555,5 @@ function initServicePage() {
     });
   });
 }
+
 
