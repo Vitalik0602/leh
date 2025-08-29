@@ -412,7 +412,7 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
   }
 
   .neon-frame {
-    background-size: 70%; /* Уменьшаем размер изображения до 80% */
+    background-size: 50%; /* Уменьшаем размер изображения до 80% */
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
