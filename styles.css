@@ -338,13 +338,13 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
 .nav {
   position: fixed;
   inset: 0;
-  background: rgba(11, 15, 22, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(11, 15, 22, 0.98); /* Увеличена непрозрачность с 0.95 до 0.98 */
+  backdrop-filter: blur(12px); /* Увеличено размытие с 10px до 12px для лучшего контраста */
   flex-direction: column;
-  justify-content: flex-start; /* Changed from center to start */
+  justify-content: flex-start;
   align-items: center;
-  gap: 20px; /* Reduced from 30px to make menu more compact */
-  padding-top: 100px; /* Added to push menu content lower */
+  gap: 20px;
+  padding-top: 100px;
   transform: translateX(100%);
   transition: transform 0.4s ease;
 }
@@ -354,7 +354,7 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
 }
 
 .nav a {
-  font-size: 18px; /* Reduced from 24px to make links smaller */
+  font-size: 18px;
   color: var(--text);
 }
   .cards { grid-template-columns: 1fr; }
