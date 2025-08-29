@@ -398,17 +398,21 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
     text-align: center;
   }
   .hero__art {
-  transform: scale(0.85); /* сильнее уменьшаем, чем раньше */
-  transform-origin: center top; /* чтоб подогнать под контент */
-  margin-top: 15px; /* чуть отступить вниз от текста */
-}
+    transform: scale(0.85);
+    transform-origin: center top;
+    margin-top: 15px;
+  }
 
-.neon-frame {
-  background-image: url('img/ram.png');
-  background-size: 80%; /* Уменьшаем размер фоновой картинки до 80% */
-  background-position: center; /* Центрируем картинку */
-  background-repeat: no-repeat; /* Убеждаемся, что картинка не повторяется */
-  width: 100%; /* Сохраняем полную ширину контейнера */
-  height: 100%; /* Сохраняем полную высоту контейнера */
-  position: relative; /* Для правильного взаимодействия с neon-line */
+  .neon-frame {
+    background-image: url('img/ram.png');
+    background-size: contain; /* Картинка полностью помещается, сохраняя пропорции */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 30px; /* Увеличены отступы для большего пространства вокруг картинки */
+    box-sizing: border-box;
+    overflow: visible; /* Предотвращаем обрезку */
+  }
 }
