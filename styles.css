@@ -330,99 +330,45 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
   .split{grid-template-columns:1fr}
 }
 
-@media (max-width: 768px) {
-  html, body {
-    overflow-x: hidden; /* Запрещаем горизонтальную прокрутку */
-    max-width: 100vw; /* Ограничиваем ширину viewport */
-    width: 100%; /* Устанавливаем ширину равной viewport */
-  }
-
-  .container {
-    max-width: 100vw; /* Контейнер не выходит за пределы viewport */
-    width: 100%; /* Занимает всю доступную ширину */
-    padding-left: 15px; /* Минимальные отступы для контента */
-    padding-right: 15px;
-    margin-inline: 0; /* Убираем авто-отступы */
-    overflow-x: hidden; /* Дополнительно предотвращаем переполнение */
-  }
-
-  .header, .section, .footer {
-    max-width: 100vw; /* Ограничиваем ширину секций */
-    overflow-x: hidden; /* Предотвращаем горизонтальное переполнение */
-  }
-
-  .grid-bg {
-    max-width: 100vw; /* Ограничиваем фоновую сетку */
-    overflow-x: hidden; /* Убираем артефакты фона */
-    mask-image: radial-gradient(70% 60% at 50% 40%, black, transparent 65%); /* Ограничиваем маску */
-  }
-
-  .glow-orb, .neon-line {
-    max-width: 100%; /* Ограничиваем элементы свечения */
-    overflow: hidden; /* Убираем выход за контейнер */
-    display: none; /* Временно отключаем для теста, можно включить позже */
-  }
-
-  .header {
-    backdrop-filter: blur(8px); /* Уменьшаем интенсивность blur для снижения артефактов */
-    -webkit-backdrop-filter: blur(8px);
-  }
-
+@media (max-width: 768px){
   .burger {
-    display: block;
-  }
+  display: block;
+}
 
-  .nav {
-    position: fixed;
-    top: 100px;
-    left: 50%;
-    transform: translateX(100%);
-    transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
-    background: rgba(11, 15, 22, 0.5);
-    backdrop-filter: blur(8px); /* Уменьшаем blur для nav */
-    -webkit-backdrop-filter: blur(8px);
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    width: fit-content;
-    min-width: 200px;
-    max-width: 100vw; /* Меню не выходит за viewport */
-    border-radius: 8px;
-    opacity: 0;
-    visibility: hidden;
-    overflow-x: hidden; /* Предотвращаем переполнение в меню */
-  }
+.nav {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  background: rgba(11, 15, 22, 0.5); /* Непрозрачность уменьшена с 0.98 до 0.5 */
+  backdrop-filter: blur(14px);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: fit-content;
+  min-width: 200px;
+  border-radius: 8px;
+}
 
-  .nav.active {
-    transform: translateX(-50%);
-    opacity: 1;
-    visibility: visible;
-  }
+.nav.active {
+  transform: translateX(-50%);
+}
 
-  .nav a {
-    font-size: 18px;
-    color: var(--text);
-    background: rgba(255, 255, 255, 0.3);
-    padding: 5px 10px;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    text-decoration: none;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .form .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer__inner {
-    flex-direction: column;
-    gap: 10px;
-  }
+.nav a {
+  font-size: 18px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+  .cards { grid-template-columns: 1fr; }
+  .form .grid{grid-template-columns:1fr}
+  .footer__inner { flex-direction: column; gap: 10px; }
 }
 
 @media (max-width: 560px){
