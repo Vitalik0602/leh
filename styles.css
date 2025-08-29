@@ -338,8 +338,8 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
 .nav {
   position: fixed;
   inset: 0;
-  background: rgba(11, 15, 22, 0.98); /* Увеличена непрозрачность с 0.95 до 0.98 */
-  backdrop-filter: blur(12px); /* Увеличено размытие с 10px до 12px для лучшего контраста */
+  background: rgba(11, 15, 22, 0.98);
+  backdrop-filter: blur(12px);
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -356,6 +356,11 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
 .nav a {
   font-size: 18px;
   color: var(--text);
+  background: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый фон для каждого слова */
+  padding: 5px 10px; /* Отступы для создания пространства внутри рамки */
+  border: 1px solid var(--text); /* Рамка, цвет совпадает с текстом */
+  border-radius: 4px; /* Скругленные углы для рамки */
+  text-decoration: none; /* Убираем подчеркивание ссылок, если оно есть */
 }
   .cards { grid-template-columns: 1fr; }
   .form .grid{grid-template-columns:1fr}
