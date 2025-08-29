@@ -388,10 +388,8 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
     margin-top: 15px; /* чуть отступить вниз от текста */
   }
   .neon-frame {
-    background-size: 70% auto; /* рамка всегда полностью влезает */
+    background-size: 80% auto; /* картинка меньше рамки */
     background-position: center;
-    width: 90%;
-    height: auto;
-    aspect-ratio: 1 / 1; /* сохраняем пропорции, чтобы не растягивалась */
+    background-repeat: no-repeat;
   }
 }
