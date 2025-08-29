@@ -360,3 +360,16 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
   .masonry{columns:1}
   .swiper { aspect-ratio: 4 / 3; }
 }
+@media (max-width: 560px){
+  .section.hero{
+    padding-left: max(8px, env(safe-area-inset-left));
+    padding-right: max(8px, env(safe-area-inset-right));
+  }
+  .section.hero .container{
+    max-width: calc(100% - 12px); /* на 12px уже, по центру */
+    margin-inline: auto;
+  }
+  .section.hero .hero__art{
+    max-width: min(260px, 88vw); /* осторожно уменьшаем визуальный блок с артом */
+  }
+}
