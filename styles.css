@@ -365,11 +365,25 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
     padding: 0 15px; /* чуть меньше поля справа/слева */
   }
   .hero__content {
-    max-width: 95%; /* чтобы текст и кнопки не обрезались */
-    margin-left: -5px; /* сдвиг всего блока слегка влево */
+    max-width: 100%; /* растягиваем рамку чуть больше */
+    margin-left: -5px; /* лёгкий сдвиг влево */
+    padding: 25px 20px; /* больше внутреннего отступа внутри рамки */
+  }
+  .hero__content h1 {
+    font-size: 1.6rem; /* чтоб не упиралось в края */
+    line-height: 1.3;
+  }
+  .hero__cta {
+    flex-direction: column; /* кнопки одна под другой */
+    gap: 12px; /* расстояние между кнопками */
+    width: 100%; /* растягиваем по ширине рамки */
+  }
+  .hero__cta .btn {
+    width: 100%; /* кнопки занимают всю ширину */
+    text-align: center;
   }
   .hero__art {
     transform: scale(0.95); /* немного уменьшаем картинку */
-    transform-origin: center; /* центрируем масштабирование */
+    transform-origin: center;
   }
 }
