@@ -383,7 +383,15 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
     text-align: center;
   }
   .hero__art {
-    transform: scale(0.95); /* немного уменьшаем картинку */
-    transform-origin: center;
+    transform: scale(0.85); /* сильнее уменьшаем, чем раньше */
+    transform-origin: center top; /* чтоб подогнать под контент */
+    margin-top: 15px; /* чуть отступить вниз от текста */
+  }
+  .neon-frame {
+    background-size: contain; /* рамка всегда полностью влезает */
+    background-position: center;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* сохраняем пропорции, чтобы не растягивалась */
   }
 }
