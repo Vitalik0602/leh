@@ -390,7 +390,7 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
   .neon-frame {
     background-size: contain; /* рамка всегда полностью влезает */
     background-position: center;
-    width: 100%;
+    width: 80%;
     height: auto;
     aspect-ratio: 1 / 1; /* сохраняем пропорции, чтобы не растягивалась */
   }
