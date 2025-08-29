@@ -331,6 +331,14 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
 }
 
 @media (max-width: 768px){
+  .container {
+    max-width: 100vw; /* Контейнер не выходит за пределы viewport */
+    width: 100%; /* Занимает всю доступную ширину */
+    padding-left: 15px; /* Минимальные отступы для контента */
+    padding-right: 15px;
+    margin-inline: 0; /* Убираем авто-отступы */
+    overflow-x: hidden; /* Дополнительно предотвращаем переполнение */
+  }
   .burger {
   display: block;
 }
