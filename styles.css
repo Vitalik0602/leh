@@ -388,7 +388,7 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
     margin-top: 15px; /* чуть отступить вниз от текста */
   }
   .neon-frame {
-    background-size: 90% auto; /* рамка всегда полностью влезает */
+    background-size: 70% auto; /* рамка всегда полностью влезает */
     background-position: center;
     width: 90%;
     height: auto;
