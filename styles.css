@@ -339,7 +339,7 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
   position: fixed;
   inset: 0;
   background: rgba(11, 15, 22, 0.98);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px); /* Увеличено размытие с 12px до 14px для лучшего контраста */
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -356,11 +356,11 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
 .nav a {
   font-size: 18px;
   color: var(--text);
-  background: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый фон для каждого слова */
-  padding: 5px 10px; /* Отступы для создания пространства внутри рамки */
-  border: 1px solid var(--text); /* Рамка, цвет совпадает с текстом */
-  border-radius: 4px; /* Скругленные углы для рамки */
-  text-decoration: none; /* Убираем подчеркивание ссылок, если оно есть */
+  background: rgba(255, 255, 255, 0.3); /* Увеличена непрозрачность фона с 0.1 до 0.3 */
+  padding: 5px 10px;
+  border: 1px solid #ffffff; /* Заменено var(--text) на #ffffff для более яркой рамки */
+  border-radius: 4px;
+  text-decoration: none;
 }
   .cards { grid-template-columns: 1fr; }
   .form .grid{grid-template-columns:1fr}
