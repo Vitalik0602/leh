@@ -331,26 +331,45 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
 }
 
 @media (max-width: 768px){
-  .burger { display: block; }
+  .burger { 
+    display: block; /* Показываем гамбургер на мобильных устройствах */
+    cursor: pointer; /* Курсор-указатель для кнопки */
+  }
+
   .nav {
     position: fixed;
     inset: 0;
-    background: rgba(11, 15, 22, 0.95);
-    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    background: rgba(11, 15, 22, 0.95); /* Темный полупрозрачный фон */
+    backdrop-filter: blur(10px); /* Эффект размытия фона */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    transform: translateX(100%);
-    transition: transform 0.4s ease;
+    transform: translateX(-100%); /* Изначально скрываем меню за пределами экрана слева */
+    transition: transform 0.4s ease; /* Плавная анимация для появления */
+    width: 100%; /* Ширина меню будет на весь экран */
+    height: 100%; /* Высота меню также на весь экран */
   }
+
   .nav.active {
-    transform: translateX(0);
+    transform: translateX(0); /* При активации меню, оно перемещается в видимую область */
   }
+
   .nav a {
     font-size: 24px;
     color: var(--text);
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    padding: 10px 20px; /* Отступы вокруг ссылок */
+    width: 100%; /* Ссылки занимают всю ширину */
+    text-align: center; /* Центрируем текст внутри ссылок */
   }
+
+  .nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Легкое выделение при наведении */
+  }
+}
   .cards { grid-template-columns: 1fr; }
   .form .grid{grid-template-columns:1fr}
   .footer__inner { flex-direction: column; gap: 10px; }
