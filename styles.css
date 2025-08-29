@@ -331,6 +331,9 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
 }
 
 @media (max-width: 768px){
+  body {
+    overflow-x: hidden; /* Запрещаем горизонтальную прокрутку */
+  }
   .burger {
     display: block;
   }
@@ -419,7 +422,7 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
 
   .neon-frame {
     background-image: url('img/ram.png');
-    background-size: contain; /* Картинка полностью помещается, сохраняя пропорции */
+    background-size: 70px; /* Картинка полностью помещается, сохраняя пропорции */
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
