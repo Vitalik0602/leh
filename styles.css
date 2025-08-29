@@ -354,16 +354,18 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
   .cards { grid-template-columns: 1fr; }
   .form .grid{grid-template-columns:1fr}
   .footer__inner { flex-direction: column; gap: 10px; }
-  .hero__art { max-height: 300px; }
+  .hero__art { max-height: 300px; margin-left: -8px; }
   .neon-frame { min-height: 300px; }
   .glow-orb { transform: scale(0.7); }
   .neon-line { width: 30%; }
+  .hero__inner { margin-left: -8px; }
 }
 
 @media (max-width: 560px){
   .masonry{columns:1}
   .swiper { aspect-ratio: 4 / 3; }
-  .hero__art { max-height: 250px; }
+  .hero__art { max-height: 250px; margin-left: -12px; }
   .neon-frame { min-height: 250px; }
   .glow-orb { transform: scale(0.5); }
+  .hero__inner { margin-left: -12px; }
 }
