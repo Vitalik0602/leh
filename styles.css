@@ -339,18 +339,19 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
   .nav {
     position: fixed;
     inset: 0;
-    top: 0;
+    top: 50px; /* Отступ сверху */
     left: 0;
     background: rgba(11, 15, 22, 0.95); /* Темный полупрозрачный фон */
     backdrop-filter: blur(10px); /* Эффект размытия фона */
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Содержимое расположено сверху */
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     transform: translateX(-100%); /* Изначально скрываем меню за пределами экрана слева */
     transition: transform 0.4s ease; /* Плавная анимация для появления */
-    width: 100%; /* Ширина меню будет на весь экран */
-    height: 100%; /* Высота меню также на весь экран */
+    width: 100%; /* Ширина меню на весь экран */
+    max-height: 80vh; /* Максимальная высота меню — 80% от высоты экрана */
+    overflow-y: auto; /* Добавляем прокрутку по вертикали, если контент выходит за пределы */
   }
 
   .nav.active {
@@ -358,7 +359,7 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
   }
 
   .nav a {
-    font-size: 24px;
+    font-size: 20px; /* Размер шрифта для ссылок */
     color: var(--text);
     text-decoration: none; /* Убираем подчеркивание у ссылок */
     padding: 10px 20px; /* Отступы вокруг ссылок */
