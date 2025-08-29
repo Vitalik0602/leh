@@ -387,9 +387,7 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
     transform-origin: center top; /* чтоб подогнать под контент */
     margin-top: 15px; /* чуть отступить вниз от текста */
   }
-  .neon-frame {
-    background-size: contain; /* Гарантирует, что изображение будет вмещаться в рамку */
-    height: 100%; /* Устанавливаем высоту рамки в 100% */
-    width: 100%; /* Устанавливаем ширину рамки в 100% */
+   .neon-frame {
+    background-size: 100% 100%; /* Масштабируем изображение для мобильных устройств */
   }
 }
