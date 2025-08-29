@@ -412,15 +412,14 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
   }
 
   .neon-frame {
-    background-image: url('img/ram.png');
-    background-size: 70px; /* Картинка полностью помещается, сохраняя пропорции */
+    background-size: 80%; /* Уменьшаем размер изображения до 80% */
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     position: relative;
-    padding: 30px; /* Увеличены отступы для большего пространства вокруг картинки */
+    padding: 30px;
     box-sizing: border-box;
-    overflow: visible; /* Предотвращаем обрезку */
+    overflow: visible;
   }
 }
