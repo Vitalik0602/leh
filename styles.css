@@ -362,3 +362,19 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
   .swiper { aspect-ratio: 4 / 3; }
   .hero__badges { text-align:center }
 }
+@media (max-width: 560px){
+  .hero__content {
+    text-align: left;   /* текст влево */
+    margin-left: 10px;  /* лёгкий сдвиг влево */
+    margin-right: 10px; /* чтобы не упиралось в край */
+  }
+
+  .hero__cta {
+    align-items: flex-start; /* кнопки тоже влево */
+  }
+
+  .hero__badges {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
