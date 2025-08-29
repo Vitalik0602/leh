@@ -412,8 +412,8 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
   }
 
   .neon-frame {
-    background-size: 70%; /* Уменьшаем размер изображения до 70% для большей видимости логотипа */
-    background-position: center;
+    background-size: 60% !important; /* Уменьшаем изображение до 60% для большей видимости логотипа */
+    background-position: center center !important;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
