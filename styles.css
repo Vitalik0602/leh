@@ -362,11 +362,11 @@ input:focus,textarea:focus{border-color:var(--neon);box-shadow:0 0 0 3px rgba(11
 }
 @media (max-width: 560px){
   .section.hero{
-    padding-left: max(8px, env(safe-area-inset-left));
-    padding-right: max(8px, env(safe-area-inset-right));
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
   }
   .section.hero .container{
-    max-width: calc(100% - 12px); /* на 12px уже, по центру */
+    max-width: calc(100% - 8px); /* на 12px уже, по центру */
     margin-inline: auto;
   }
   .section.hero .hero__art{
